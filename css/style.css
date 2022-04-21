@@ -1,0 +1,72 @@
+body {
+    
+    width: 1280px;
+    height: 512px;
+
+    /* Light blue/light-blue-100 */
+    background: linear-gradient(#AAB2D5, #E9ECF8, #AAB2D5);
+}
+
+
+.logo {
+    /*background-image: url(imagenes/Logo.png);
+    background-size: 120px 48px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+.profile-INSTAGRAM {
+    background-image: url("/img/icon-instagram-big.svg");
+    background-size: 32px 32px;
+}
+
+.profile-LINKEDIN {
+    background: url(/img/icon-linkedin-big.svg);
+    background-size: 24px 24px;
+}
+
+.profile-TWITTER {
+    background-image: url(/img/icon-twitter-big.svg);
+    background-size: 32px 32px;
+}
+
+.profile-GITHUB {
+    background-image: url(icon-github-big.svg);
+    background-size: 26px 26px;
+}
+
+
+.profile-description {
+    display: none;
+}
+
+.profile-link {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-position: 50%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    order: 2;
+}
