@@ -7,8 +7,8 @@
         <meta charset="UTF-8"> 
         <title>Encriptador de texto - Alura challenge</title>
 
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     
     </head>
 
@@ -21,14 +21,32 @@
 
         <main>
 
-            <button id="encriptador" class="boton encriptar">Encriptar</button>
-            <button id="desencriptador" class="boton desencriptar">Desencriptar</button>
+            <input id="texto" name="textBox" type="text" placeholder="Ingrese el texto aquí" 
+            class="campo campo-medio" autofocus>
 
-            <ul class >
-                <li>
+            <div class = botones>
+                <button id="encriptador" class="boton boton-encriptar">Encriptar</button>
+                <button id="desencriptador" class="boton boton-desencriptar">Desencriptar</button>
+            </div>
+            
 
-                </li>
-            </ul>
+            <div class = rectangulo-resultado>
+
+                <div class = sin-texto>
+                    <label id= "resultado">Ningún mensaje fue encontrado</label>
+                </div>
+              
+
+            </div>
+
+            <div class = mensaje-prohibidos>
+
+                <label id= "prohibidos" class = "aviso-prohibidos">Solo letras minúsculas y sin acentos</label>
+                
+                <img class ="exclamacion" src="img/exclamation-circle-fill.png" alt="Signo de exclamación">
+            </div>
+
+            
 
         </main>
 
@@ -70,7 +88,8 @@
             </div>
         </footer>
 
-        <script src = "js/principal.js"></script>
+        <script src = "js/encriptador.js"></script>
+        <script src = "js/desencriptador.js"></script>
 
 
     </body>
