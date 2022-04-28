@@ -80,7 +80,7 @@ botonCopiar.addEventListener("click", function (event) {
     event.preventDefault();
     
     texto.value = resultado.textContent;
-    resultado.value = '';
+    resultado.innerHTML = '';
     
 })
 
