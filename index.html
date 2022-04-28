@@ -26,14 +26,27 @@
 
             <div class = botones>
                 <button id="encriptador" class="boton boton-encriptar">Encriptar</button>
+
                 <button id="desencriptador" class="boton boton-desencriptar">Desencriptar</button>
             </div>
             
 
             <div class = rectangulo-resultado>
 
-                <div class = sin-texto>
-                    <label id= "resultado">Ningún mensaje fue encontrado</label>
+                <section class = sin-texto id = "sText">
+                    <img class ="muniecx" src="img/Muñeco.png" alt="Muñecx buscando">
+                    
+                    <label id= "mensaje-404">Ningún mensaje fue encontrado</label>
+                    <label id= "mensaje-indicacion">Ingresa el texto que desees encriptar o desencriptar.</label>
+                                   
+
+                </section>
+                <div class = con-texto>
+                    
+                    <label id= "resultado"></label>
+                    
+                    <button id="copiador" class="boton boton-copiar">Copiar</button>
+
                 </div>
               
 
@@ -88,8 +101,8 @@
             </div>
         </footer>
 
-        <script src = "js/encriptador.js"></script>
-        <script src = "js/desencriptador.js"></script>
+        <script src = "js/botones.js"></script>
+        
 
 
     </body>
