@@ -3,16 +3,15 @@ var botonDesencriptar = document.querySelector("#desencriptador");
 var texto = document.querySelector("#texto");
 var resultado = document.querySelector("#resultado");
 var botonCopiar =  document.querySelector("#copiador");
+var bloque = document.querySelector("#sText"); 
 
 botonEncriptar.addEventListener("click", function (event) {
     event.preventDefault();
     
-    var bloque = document.querySelector("#sText");     
-    
+        
     var verificar = verificarCaracteresProhibidos(texto.value);
     
     if (verificar){
-
        
         bloque.style.visibility = "hidden"
         copiador.style.visibility = "visible"
@@ -37,10 +36,15 @@ function encriptar(palabraAencriptar) {
 botonDesencriptar.addEventListener("click",function(event){
     event.preventDefault();
 
-    var texto = document.querySelector("#texto");
+    var verificar = verificarCaracteresProhibidos(texto.value);
     
-    var resultado = document.querySelector("#resultado");
-    resultado.textContent = desencriptar(texto.value);
+    if (verificar){
+       
+        bloque.style.visibility = "hidden"
+        copiador.style.visibility = "visible"
+        resultado.textContent = desencriptar(texto.value); 
+        texto.value = '';
+    }  
 
 })
 
